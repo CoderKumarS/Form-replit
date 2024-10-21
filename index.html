@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- close -->
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- close -->
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div class="container-fluid">
+        <div class="row stic" style="background-color:#aaffcad5 " id="navi">
+            <div class="col-md-2 ">
+                <img class="campus_logo" src="logo.jpg">
+            </div>
+            <div class="col-md-6">
+                <span class="hea mx-auto">CAMPUS RECRUITEMENT SYSTEM</span>
+            </div>
+            <div class="col-md-4">
+                <span style=" margin:1px auto 3px 4px;" class=""><i class="bi bi-telephone-fill ms-1"></i>call</span>
+                <span class="ms-auto"><i class="bi bi-yin-yang"
+                        style="margin-right: 5px; margin-top: 5px; "></i>message</span>
+                <span class="ms-auto"><i class="bi bi-yin-yang"
+                        style="margin-right: 5px; margin-top: 5px; "></i>email</span>
+            </div>
+        </div>
+        <div class="head">
+            <i class="fa-phone-volume"></i>
+            <i class="fa fa-android"></i>
+            <i class="fa-sharp fa-solid fa-user"></i>
+            <h1 style="font-size:50px">पपीता</h1>
+
+            <i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>
+            <span class="material-symbols-outlined">
+                settings
+            </span>
+            <i class="glyphicon glyphicon-arrow-left"></i>
+
+            <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="container-fluid ">
+            <div class="row mycolorf">
+                <div class="col-md-12 py-2">
+                    <center>
+                        <b>
+                            <h1 id="heading">STUDENT REGISTRATION FORM</h1>
+                        </b>
+                    </center>
+                    <form name="f1" id="f1" method="post" action="studentresum_action.php">
+                        <table style="margin: 25px auto;">
+                            <tr>
+                                <td style="font-weight:bold;">FirstName</td>
+                                <td><input type="text" name="fn" class="form-control myform"
+                                        placeholder="Remember as username" required /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Password</td>
+                                <td><input type="text" name="rl" class="form-control" placeholder="Remember as password"
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">LastName</td>
+                                <td><input type="text" name="ln" class="form-control"
+                                        placeholder="Max 50 Characters Allowed" required /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Father's Name</td>
+                                <td><input type="text" name="fan" class="form-control"
+                                        placeholder="Max 50 Characters Allowed" required /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Mother's Name</td>
+                                <td><input type="text" name="mn" class="form-control"
+                                        placeholder="Max 50 Characters Allowed" required /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Gender</td>
+                                <td><input type="radio" name="ge" value="female" />Female
+                                    <input type="radio" name="ge" value="male" style="margin-left: 30px;" />Male
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">E-Mail</td>
+                                <td><input type="email" name="em" class="form-control"
+                                        placeholder="eg. xyz123@gmail.com" required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Contact No.</td>
+                                <td><input type="number" name="cn" class="form-control" placeholder="+91 9857xxxxxx"
+                                        required maxlength="12" /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">City</td>
+                                <td><input type="text" name="ct" class="form-control" /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Address</td>
+                                <td><textarea type="text" name="ad" class="form-control"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">DOB</td>
+                                <td><input type="date" name="db" class="form-control" /></td>
+                            </tr>
+                        </table>
+                        <table style="margin: 25px auto;">
+                            <tr>
+                                <p class="my-auto" id="edu"
+                                    style="font-weight:bold; font-size:20px; text-decoration:underline; padding: 20px auto;">
+                                    Educational
+                                    Qualifications:</p>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">School</td>
+                                <td><input type="text" name="sc" class="form-control myform" /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Year of passing</td>
+                                <td><input type="text" name="yp" class="form-control myforme" /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Percentage</td>
+                                <td><input type="text" name="pr" class="form-control myforme" /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">college</td>
+                                <td><input type="text" name="co" class="form-control" /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Year of passing</td>
+                                <td><input type="text" name="cyp" class="form-control" /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Percentage</td>
+                                <td><input type="text" name="cpr" class="form-control" /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">University</td>
+                                <td><input type="text" name="un" class="form-control" /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Year of passing</td>
+                                <td><input type="text" name="upy" class="form-control" /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Percentage</td>
+                                <td><input type="text" name="upr" class="form-control" /></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;">Experiance(if any)</td>
+                                <td><textarea type="text" name="exp" class="form-control"></textarea></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">
+                                    <br><input type="submit" value="Register" class="btn btn-primary" />
+                                </td>
+                                <td align="center">
+                                    <br><input type="reset" value="Clear" class="btn btn-primary">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <!-- </center> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
